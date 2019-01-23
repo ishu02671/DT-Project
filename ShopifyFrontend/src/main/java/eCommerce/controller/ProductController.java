@@ -40,7 +40,7 @@ public class ProductController
 		List<Product> listProducts = productDAO.listProducts();
 		m.addAttribute("productList", listProducts);
 		m.addAttribute("categoryList", this.getCategories());
-		m.addAttribute("pageinfo", "Manage Product");
+		m.addAttribute("pageinfo", "Manage Product-");
 		
 		
 		return "Product";
@@ -54,7 +54,7 @@ public class ProductController
 		
 		Product product1 = new Product();
 		m.addAttribute(product1);
-		m.addAttribute("pageinfo" , "Manage Product");
+		m.addAttribute("pageinfo" , "Manage Product-");
 		m.addAttribute("categoryList", this.getCategories());
 		
 		String imagepath = "C:\\Users\\Ishu\\eclipse-workspace\\ShopifyFrontend\\src\\main\\webapp\\resources\\images\\";
@@ -98,7 +98,7 @@ public class ProductController
 		Product product1 = new Product();
 		m.addAttribute(product1);
 		
-		m.addAttribute("pageinfo" , "Manage Product");
+		m.addAttribute("pageinfo" , "Manage Product-");
 		m.addAttribute("categoryList", this.getCategories());
 		
 		
@@ -118,7 +118,7 @@ public class ProductController
 		Product product1 = new Product();
 		m.addAttribute(product1);
 		
-		m.addAttribute("pageinfo" , "Manage Product");
+		m.addAttribute("pageinfo" , "Manage Product-");
 		m.addAttribute("categoryList", this.getCategories());
 		
 		List<Product> listProducts = productDAO.listProducts();
@@ -135,7 +135,7 @@ public class ProductController
 		Product product = productDAO.getProduct(productId);
 		m.addAttribute(product);
 		
-		m.addAttribute("pageinfo" , "Manage Product");
+		m.addAttribute("pageinfo" , "Manage Product-");
 		m.addAttribute("categoryList", this.getCategories());
 		
 		return "UpdateProduct";
@@ -145,7 +145,7 @@ public class ProductController
 	@RequestMapping(value="/productDisplay")
 	public String displayAllProduct(Model m)
 	{
-		m.addAttribute("pageinfo" , "Product Catalog");
+		m.addAttribute("pageinfo" , "Product Catalog-");
 		List<Product> listProducts = productDAO.listProducts();
 		m.addAttribute("productList", listProducts);
 		
@@ -156,7 +156,7 @@ public class ProductController
 	@RequestMapping(value="/totalProductDisplay/{productId}")
 	public String totalProductDisplay(@PathVariable("productId")int productId , Model m)
 	{
-		m.addAttribute("pageinfo", "Product Info");
+		m.addAttribute("pageinfo", "Product Info-");
 		Product product = productDAO.getProduct(productId);
 		m.addAttribute("product", product);
 		

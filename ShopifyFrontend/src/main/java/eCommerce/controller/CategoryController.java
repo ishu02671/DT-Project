@@ -22,7 +22,7 @@ public class CategoryController
 	@RequestMapping("/category")
 	public String showCategory(Model m)
 	{
-		m.addAttribute("pageinfo", "Manage Category");
+		m.addAttribute("pageinfo", "Manage Category-");
 		
 		List<Category> listCatg = categoryDAO.listCategories();
 		m.addAttribute("listCategories", listCatg);
@@ -42,7 +42,7 @@ public class CategoryController
 		List<Category> listCatg = categoryDAO.listCategories();
 		m.addAttribute("listCategories", listCatg);
 		
-		m.addAttribute("pageinfo", "Manage Category");
+		m.addAttribute("pageinfo", "Manage Category-");
 		
 		return "Category";
 		
@@ -59,7 +59,7 @@ public class CategoryController
 		List<Category> listCatg = categoryDAO.listCategories();
 		m.addAttribute("listCategories", listCatg);
 		
-		m.addAttribute("pageinfo", "Manage Category");
+		m.addAttribute("pageinfo", "Manage Category-");
 		
 		return "Category";
 		
@@ -74,7 +74,7 @@ public class CategoryController
 		List<Category> listCatg = categoryDAO.listCategories();
 		m.addAttribute("listCategories", listCatg);
 		
-		m.addAttribute("pageinfo", "Manage Category");
+		m.addAttribute("pageinfo", "Manage Category-");
 		
 		return "Category";		
 		
@@ -87,7 +87,7 @@ public class CategoryController
 		
 		m.addAttribute("category", category);
 		
-		m.addAttribute("pageinfo", "Manage Category");
+		m.addAttribute("pageinfo", "Manage Category-");
 		
 		return "UpdateCategory";		
 		

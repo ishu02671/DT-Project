@@ -10,28 +10,28 @@ public class PageController
 	@RequestMapping("/login")
 		public String showLogin(Model m)
 		{
-		    m.addAttribute("pageinfo" , "Login");
+		    m.addAttribute("pageinfo" , "Login-");
 			return "Login";
 		}
 	 
     @RequestMapping("/register")
 		public String showRegister(Model m)
 		{
-    	    m.addAttribute("pageinfo" , "Register");
+    	    m.addAttribute("pageinfo" , "Register-");
 			return "Register";
 		}
 
 	@RequestMapping("/contactus")
 		public String showContactUs(Model m)
 		{
-		    m.addAttribute("pageinfo" , "Contact Us");
+		    m.addAttribute("pageinfo" , "Contact Us-");
 			return "ContactUs";
 		}
 
 	@RequestMapping("/aboutus")
 		public String showAboutUs(Model m)
 		{
-		    m.addAttribute("pageinfo" , "About Us");
+		    m.addAttribute("pageinfo" , "About Us-");
 			return "AboutUs";
 		}
 
