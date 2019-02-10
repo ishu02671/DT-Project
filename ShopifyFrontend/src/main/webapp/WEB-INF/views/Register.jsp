@@ -1,29 +1,20 @@
 <%@ page language="java" contentType="text/html"%>
 <%@include file="Header.jsp" %>
 
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<body>
 
 <div class="container">
 	<div class="row main">
 		<div class="main-login main-center">
 			<h5> Sign up </h5>
-				<form class="" method="post" action="#">
+				<form action="<c:url value="/register"/>" method="post">
 						
 					<div class="form-group">
 						<label for="name" class="cols-sm-2 control-label">Your Name</label>
 						  <div class="cols-sm-10">
 							<div class="input-group">
 							   <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-							   <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+							   <input type="text" class="form-control" name="customerName" placeholder="Enter your Name"/>
 						    </div>
 						  </div>
 					</div>
@@ -33,9 +24,19 @@
 						<div class="cols-sm-10">
 							<div class="input-group">
 								<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-								<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+								<input type="text" class="form-control" name="email" placeholder="Enter your Email"/>
 							</div>
 						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="name" class="cols-sm-2 control-label">Your Address</label>
+						  <div class="cols-sm-10">
+							<div class="input-group">
+							   <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+							   <input type="text" class="form-control" name="customerAddr" placeholder="Enter your Address"/>
+						    </div>
+						  </div>
 					</div>
 
 					<div class="form-group">
@@ -43,7 +44,7 @@
 						<div class="cols-sm-10">
 							<div class="input-group">
 							   <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-							   <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+							   <input type="text" class="form-control" name="username"  placeholder="Enter your Username"/>
 							</div>
 						</div>
 					</div>
@@ -53,23 +54,13 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+									<input type="password" class="form-control" name="password" placeholder="Enter your Password"/>
 								</div>
 							</div>
 					</div>
-
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group ">
-							<a href="https://deepak646.blogspot.com/" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+					
+					<div class="form-group ">
+							<input type="submit" value="Register" class="btn btn-primary btn-lg btn-block login-button" />
 						</div>
 						
 					</form>
@@ -77,6 +68,3 @@
 			</div>
 		</div>
 
-
-</body>
-</html>
