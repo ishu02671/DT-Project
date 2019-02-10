@@ -31,16 +31,32 @@ public class CartJunitTest
 	public void addCartItemTest() 
 	{
 		CartItem cartItem = new CartItem();
-		cartItem.setProductId(73);
-		cartItem.setProductName("Puma Jackets");
-		cartItem.setQuantity(2);
-		cartItem.setPrice(2400);
+		cartItem.setProductId(74);
+		cartItem.setProductName("Nike Shoes");
+		cartItem.setQuantity(1);
+		cartItem.setPrice(24000);
 		cartItem.setPaymentStatus("NP");
 		cartItem.setUsername("sumit");
 		
 		assertTrue("Problem in Adding into Cart", cartDAO.addCartItem(cartItem));
 		
 	}
+    
+    @Ignore
+    @Test
+    public void updateCartItemTest()
+    {
+    	CartItem cartItem = cartDAO.getCartItem(78);
+    	cartItem.setQuantity(5);
+    	assertTrue("Problem in Updating Cart Item", cartDAO.updateCartItem(cartItem));
+    }
+    
+    @Test
+    public void deleteCartItem()
+    {
+    	CartItem cartItem = cartDAO.getCartItem(77);
+    	assertTrue("Problem in Deleting Cart Item", cartDAO.deleteCartItem(cartItem));
+    }
 	
 	@Test
 	public void displayCartItems()

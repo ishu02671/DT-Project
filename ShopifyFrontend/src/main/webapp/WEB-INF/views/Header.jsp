@@ -50,6 +50,7 @@
                  <ul class=" nav navbar-nav">
                    <li> <a href="<c:url value="/userhome" />"> HOME </a></li> 
                    <li> <a href="<c:url value="/productDisplay" />"> PRODUCT CATALOG </a></li>
+                   <li> <a href="<c:url value="/cart" />"> CART </a></li>
                 </ul>
              </c:if>
            </c:if>  
