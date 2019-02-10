@@ -5,7 +5,7 @@
 <table class="table table-bordered">
 
   <tr class="danger">
-    <td colspan="4"><center> Your Cart </center> </td>
+    <td colspan="5"><center> Your Cart </center> </td>
   </tr>
   
   <tr>
@@ -40,7 +40,7 @@
   </form>
   </c:forEach>
   
-  <tr class="varning">
+  <tr class="warning">
      <td colspan="4"> Total Purchase Amount </td>
      <td colspan="2"> ${grandTotal} </td> 
   </tr>

@@ -11,7 +11,7 @@ public class UserDetail
 {
 	@Id
     
-	String userName;
+	String username;
 	String password;
 	String role;
 	boolean enabled;
@@ -21,12 +21,12 @@ public class UserDetail
 	
 	public String getUserName() 
 	{
-		return userName;
+		return username;
 	}
 	
-	public void setUserName(String userName) 
+	public void setUserName(String username) 
 	{
-		this.userName = userName;
+		this.username = username;
 	}
 	
 	public String getPassword() 

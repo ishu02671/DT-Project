@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import eCommerce.model.CartItem;
 import eCommerce.model.Category;
+import eCommerce.model.OrderDetail;
 import eCommerce.model.Product;
 import eCommerce.model.Supplier;
 import eCommerce.model.UserDetail;
@@ -57,6 +58,7 @@ public class DBConfig {
 		localFactory.addAnnotatedClass(Supplier.class);
 		localFactory.addAnnotatedClass(UserDetail.class);
 		localFactory.addAnnotatedClass(CartItem.class);
+		localFactory.addAnnotatedClass(OrderDetail.class);
 		
 		System.out.println("SessionFactory Obejct is Created");
 		

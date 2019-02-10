@@ -1,6 +1,6 @@
 package eCommerce.DAO;
 
-import org.hibernate.HibernateException;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -31,18 +31,35 @@ public class UserDAOImpl implements UserDAO
 	}
 
 	@Override
-	public boolean updateUser(UserDetail user) 
+	public boolean updateAddress(UserDetail user) 
 	{
-		// TODO Auto-generated method stub
-		return false;
+		try 
+		{
+			sessionFactory.getCurrentSession().update(user);
+			return true;
+		
+		} catch (Exception e) 
+		
+		{
+			return false;
+		}
+		
+		
 	}
 
 	@Override
-	public UserDetail getUser(String userName)
+	public UserDetail getUser(String username)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		Session session = sessionFactory.openSession();
+		UserDetail userDetail = (UserDetail)session.get(UserDetail.class, username);
+		session.close();
+		
+		return userDetail;
 	}
+
+
+
+	
 
 	
 }
