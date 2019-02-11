@@ -4,7 +4,7 @@
 
 <body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
 
-<h3> USER HOMEPAGE </h3>
+<center><h3 style="color:green"><b> USER HOMEPAGE </b></h3></center>
 
 <div class="row">
   <c:forEach items = "${productList}" var="product" >
