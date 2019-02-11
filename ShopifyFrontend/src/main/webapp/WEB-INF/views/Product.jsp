@@ -2,6 +2,8 @@
 
 <%@include file="Header.jsp" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
 <br> <br>
@@ -84,4 +86,6 @@
      </tr>
    </c:forEach>
 </table> 
+
+</body>
 

@@ -4,6 +4,8 @@
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <br> <br>
 
 <form action="<c:url value="/addToCart/${product.productId}" />" >
@@ -61,3 +63,5 @@
  
 </table>
  </form>
+ 
+ </body>

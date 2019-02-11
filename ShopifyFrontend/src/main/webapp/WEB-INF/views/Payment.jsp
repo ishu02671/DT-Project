@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html"%>
 <%@include file="Header.jsp" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <div class="container">
  <form action="<c:url value="/receipt" />" method = "post"> 
   <table class="table table-bordered" width ="50%" align="center">
@@ -40,3 +42,4 @@
   </table>
  </form> 
 </div>
+</body>

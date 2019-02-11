@@ -2,9 +2,12 @@
 
 <%@include file="Header.jsp" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
  
 <form action="<c:url value="/AddCategory"/>" method="post">  
+
 <table align="center" class="table">
   
   <tr>
@@ -47,4 +50,6 @@
        <td> <a href="<c:url value="/deleteCategory/${category.categoryId}"/>" class="btn btn-danger"> DELETE </a> </td>
      </tr>
    </c:forEach>
-</table>  
+</table> 
+
+</body> 

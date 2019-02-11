@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html"%>
 <%@include file="Header.jsp" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <div class="container">
   <table class="table table-bordered" align="center">
     <tr class="danger">
@@ -53,7 +55,9 @@
     <td colspan="4"> ${orderDetail.shippingAddr}</td>
    </tr> 
   
-  
+  <center><h2 style="color:green;font-family:Comic Sans MS;"> <b> THANKYOU for Shopping with us </b></h2> </center>
   
   </table>
 </div>  
+
+</body>

@@ -57,7 +57,7 @@ public class ProductController
 		m.addAttribute("pageinfo" , "Manage Product-");
 		m.addAttribute("categoryList", this.getCategories());
 		
-		String imagepath = "C:\\Users\\Ishu\\eclipse-workspace\\ShopifyFrontend\\src\\main\\webapp\\resources\\images\\";
+		String imagepath = "C:\\Users\\Ishu\\git\\DT-Project\\ShopifyFrontend\\src\\main\\webapp\\resources\\images\\";
 		imagepath = imagepath+String.valueOf(product.getProductId())+ ".jpg";
 		
 		File image = new File(imagepath);

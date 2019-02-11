@@ -2,6 +2,8 @@
 
 <%@include file="Header.jsp" %>
 
+<body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
+
 <h3> USER HOMEPAGE </h3>
 
 <div class="row">
@@ -19,4 +21,6 @@
     </div>     
   </c:forEach>
 </div>
+
+</body>
 
