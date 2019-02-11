@@ -29,7 +29,6 @@ public class RegisterController
 		user.setRole("ROLE_USER");
 		userDAO.registerUser(user);
 		
-		
 		return "Login";
 	}
 

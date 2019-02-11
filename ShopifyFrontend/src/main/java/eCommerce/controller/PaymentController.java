@@ -48,6 +48,8 @@ public class PaymentController
 		String address = userDetail.getCustomerAddr();
 		m.addAttribute("addr", address);
 		
+		m.addAttribute("pageinfo", "My Cart-");
+		
 		
 		return "OrderConfirm";
 	}
@@ -68,12 +70,15 @@ public class PaymentController
 		String address = userDetail.getCustomerAddr();
 		m.addAttribute("addr", address);
 		
+		m.addAttribute("pageinfo", "My Cart-");
+		
 		return "OrderConfirm";
 	}
 	
 	@RequestMapping(value="/payment")
 	public String paymentPage(Model m , HttpSession session)
 	{
+		m.addAttribute("pageinfo", "Payment-");
 		return "Payment";
 	}
 	
@@ -102,6 +107,8 @@ public class PaymentController
         orderDAO.updateCart(username);
         
         m.addAttribute("orderDetail", orderDetail);
+        
+        m.addAttribute("pageinfo", "Receipt-");
 		
 		return "Receipt";
 	}

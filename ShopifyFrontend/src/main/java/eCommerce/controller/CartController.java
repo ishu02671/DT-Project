@@ -33,6 +33,7 @@ public class CartController
 		
 		m.addAttribute("cartItemList", cartItemList);
 		m.addAttribute("grandTotal", this.getGrandTotal(cartItemList));
+		m.addAttribute("pageinfo", "My Cart-");
 		
 		return "Cart";
 		
@@ -60,6 +61,8 @@ public class CartController
 		
 		m.addAttribute("cartItemList", cartItemList);
 		m.addAttribute("grandTotal", this.getGrandTotal(cartItemList));
+		m.addAttribute("pageinfo", "My Cart-");
+		
 		
 		return "Cart";
 	}
@@ -76,6 +79,7 @@ public class CartController
 		
 		m.addAttribute("cartItemList", cartItemList);
 		m.addAttribute("grandTotal", this.getGrandTotal(cartItemList));
+		m.addAttribute("pageinfo", "My Cart-");
 		
 		
 		return "Cart";
@@ -93,6 +97,7 @@ public class CartController
 		
 		m.addAttribute("cartItemList", cartItemList);
 		m.addAttribute("grandTotal", this.getGrandTotal(cartItemList));
+		m.addAttribute("pageinfo", "My Cart-");
 		
 		
 		return "Cart";
