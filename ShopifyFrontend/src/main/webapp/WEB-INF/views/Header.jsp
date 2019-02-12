@@ -17,11 +17,21 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
 integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+
+<style>
+.navbar-custom
+{
+
+background-color: #4d004d;
+}
+</style>
+
 </head>
+
 <body>
 
 <div class="container">
-    <nav class="navbar navbar-inverse" >
+    <nav class="navbar navbar-inverse navbar-custom" >
         <div class="container-fluid">
            <div class="navbar-header"> 
                <a class="navbar-brand" href="#" > SHOPIFY </a>
