@@ -28,8 +28,14 @@ public class RegisterController
 		user.setEnabled(true);
 		user.setRole("ROLE_USER");
 		userDAO.registerUser(user);
-		
-		return "Login";
+	
+		return "Success";
+	}
+	
+	@RequestMapping(value="/success")
+	public String showSuccessPage()
+	{
+		return "Success";
 	}
 
 }

@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="row main">
 		<div class="main-login main-center">
-			<h5> Sign up </h5>
+			<h3> Sign up </h3>
 				<form action="<c:url value="/register"/>" method="post">
 						
 					<div class="form-group">

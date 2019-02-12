@@ -6,7 +6,9 @@
 <body background="https://www.noupe.com/wp-content/uploads/2009/10/hybrid-genesis.jpg">
 
 
-<h1 align="center" style="color:purple"><b> ABOUT </b></h1>
+<h2 align="center" style="color:purple"><b> ABOUT </b></h2>
+
+<div style="height:500px;width:1100px;margin-left:200px">
 <span style="font-size:25px">
 <i> <center>
 The first Shopify store was our own.<br>
@@ -17,4 +19,6 @@ We could have listed our products on a number of marketplaces, but we wanted to 
 
 We focus on making commerce better for everyone, so businesses can focus on what they do best: building and selling their products. Today, merchants use our platform to manage every aspect of their business - from products to orders to customers, selling online, in retail stores, and on the go.
 </center></i></span>
+
+</div>
 </body>
