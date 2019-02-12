@@ -9,7 +9,7 @@
 <br> <br>
 
 <form action="<c:url value="/addToCart/${product.productId}" />" >
-<table class="table-bordered"> 
+<table class="table-bordered" align="center"> 
  <tr>
    <td rowspan="8"> 
    <img src="<c:url value="/resources/images/${product.productId}.jpg" />" alt = "Generic placeholder thumbnail">
