@@ -11,7 +11,7 @@
 </div>
 
 <footer>
-<center><b> Copyright &copy 2019 Shopify </b></center>
+<center><b> Copyright &copy 2020 Shopify </b></center>
 </footer>
 </div>
 </body>

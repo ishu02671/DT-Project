@@ -52,6 +52,7 @@ background-color: #4d004d;
              <c:if test="${sessionScope.role=='ROLE_ADMIN'}">
 
                  <ul class=" nav navbar-nav">
+                   <li> <a href="<c:url value="/adminhome" />"> <i class='fas fa-home'></i> HOME </a></li>
                    <li> <a href="<c:url value="/product" />"> <i class='fas fa-edit'></i> MANAGE PRODUCT </a></li>
                    <li> <a href="<c:url value="/category" />"> <i class='fas fa-edit'></i> MANAGE CATEGORY </a></li>
                    <li> <a href="<c:url value="/productDisplay" />"> <i class='fas fa-tags'></i> PRODUCT CATALOG </a></li>
@@ -71,8 +72,8 @@ background-color: #4d004d;
          </div>
          
          <c:if test="${sessionScope.loggedIn}">
-            <div style="margin-top:-30px;margin-left:950px" > 
-               <font color="white" face="calibri" size="2"> Welcome ${sessionScope.username} </font>
+            <div style="margin-top:-30px;margin-left:930px" > 
+               <font color="white" face="calibri" size="3"> Welcome ${sessionScope.username} </font>
                <a href="<c:url value="/perform_logout" />" class="btn btn-danger"> <i class='fas fa-power-off'></i> Logout </a>
             </div>  
          </c:if>

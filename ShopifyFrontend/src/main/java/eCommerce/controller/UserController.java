@@ -34,6 +34,17 @@ public class UserController
 		return "UserHome";
 	}
 	
+
+	@RequestMapping(value="/adminhome")
+	public String showAdminHome(Model m, HttpSession session)
+	{
+		m.addAttribute("pageinfo" , "Admin Home-");
+		List<Product> listProducts = productDAO.listProducts();
+		m.addAttribute("productList", listProducts);
+		
+		return "AdminHome";
+	}
+	
 	@RequestMapping(value="/login_success")
 	public String loginCheck(Model m, HttpSession session)
 	{

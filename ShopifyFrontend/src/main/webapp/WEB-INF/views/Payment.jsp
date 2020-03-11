@@ -13,7 +13,7 @@
     <tr class="info">
       <td colspan="2"> 
         <center>
-        <input type="radio" name="pmode" value="CC"> Credit Card
+        <input type="radio" name="pmode" value="CC" checked> Credit Card
         <input type="radio" name="pmode" value="COD"> Cash On Delivery
         </center>
       </td>
@@ -26,12 +26,12 @@
     </tr>
     
     <tr class="warning">
-      <td>Valid<input type="text" name="Valid"> </td>
+      <td>Valid &nbsp; <input type="text" name="Valid"> </td>
       <td>CVV <input type="text" name="CVV"/> </td>
     </tr>
     
     <tr class="success">
-      <td> Name </td>
+      <td> Name of CardHolder </td>
       <td> <input type="text" name="name"/> </td>
     </tr>
     
