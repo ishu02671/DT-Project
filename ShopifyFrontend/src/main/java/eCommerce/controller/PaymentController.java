@@ -85,7 +85,7 @@ public class PaymentController
 	@RequestMapping(value="/receipt", method=RequestMethod.POST)
 	public String generateReceipt(@RequestParam("pmode")String pmode,Model m , HttpSession session)
 	{
-		String username=(String)session.getAttribute("username");
+		String username=(String) session.getAttribute("username");
 		
 		OrderDetail orderDetail = new OrderDetail();
 		

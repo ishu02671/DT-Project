@@ -65,6 +65,7 @@ background-color: #4d004d;
                    <li> <a href="<c:url value="/userhome" />"> <i class='fas fa-home'></i> HOME </a></li> 
                    <li> <a href="<c:url value="/productDisplay" />"> <i class='fas fa-tags'></i> PRODUCT CATALOG </a></li>
                    <li> <a href="<c:url value="/cart" />"> <i class='fas fa-shopping-cart'></i> CART </a></li>
+                   <li> <a href="<c:url value="/myorders" />"> <i class='fa fa-shopping-bag' ></i> YOUR ORDERS </a></li>
                 </ul>
              </c:if>
            </c:if>  

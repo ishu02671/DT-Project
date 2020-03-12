@@ -13,6 +13,7 @@ public class PageController
 		    m.addAttribute("pageinfo" , "Login-");
 			return "Login";
 		}
+	
 	 
     @RequestMapping("/register")
 		public String showRegister(Model m)

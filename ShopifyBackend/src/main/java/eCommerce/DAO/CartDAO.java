@@ -13,5 +13,7 @@ public interface CartDAO
 	public CartItem getCartItem(int cartItemId);
 	
 	public List<CartItem> listCartItems(String username);
+	
+	public List<CartItem> ConfirmCartItems(String username);
 
 }
